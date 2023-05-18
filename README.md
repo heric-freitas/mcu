@@ -18,29 +18,28 @@ Tentei utilizar o minimo possivel de pacotes e utilizar o flutter mais puro poss
 
 ## Estrutura de pastas
 
-- lib
-- main.dart: onde está o inicio do aplicativo
--- src
---- core
----- extensions
------ date_formatter.dart : uma extensions de String para facilitar a formatação de uma data para dd/MM/yyyy
------ navigator.dart : uma extensions de BuildContext para facilitar a navegação
------ size.dart : uma extensions de BuildContext para facilitar para pegar informações da tela e fazer contas sobre essas informações
---- modules
----- mcu
------ data
------ domain
------ infra
------ models
------ presenter
------ ui
------ mcu_provider.dart : fazer o controle das injeções que faz neste modulo
----- movie_details
------ data
------ domain
------ infra
------ models
------ presenter
------ ui
------ movie_detail_provider.dart : fazer o controle das injeções que faz neste modulo
-
+lib
+ main.dart: onde está o inicio do aplicativo
+ src
+ core
+ extensions
+ date_formatter.dart : uma extensions de String para facilitar a formatação de uma data para dd/MM/yyyy
+ navigator.dart : uma extensions de BuildContext para facilitar a navegação
+ size.dart : uma extensions de BuildContext para facilitar para pegar informações da tela e fazer contas sobre essas informações
+ modules
+ mcu
+ data
+ domain
+ infra
+ models
+ presenter
+ ui
+ mcu_provider.dart : fazer o controle das injeções que faz neste modulo
+ movie_details
+ data
+ domain
+ infra
+ models
+ presenter
+ ui
+ movie_detail_provider.dart : fazer o controle das injeções que faz neste modulo
