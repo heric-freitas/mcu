@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:marvel/src/core/extensions/navigator.dart';
-import 'package:marvel/src/core/mixins/loader.dart';
-import 'package:marvel/src/core/mixins/messages.dart';
-import 'package:marvel/src/core/styles/app_text_styles.dart';
+import '../../../core/extensions/navigator.dart';
+import '../../../core/mixins/loader.dart';
+import '../../../core/mixins/messages.dart';
+import '../../../core/styles/app_text_styles.dart';
 
 import '../models/movies.dart';
 import '../presenter/controllers/bloc/mcu_bloc.dart';

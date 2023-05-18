@@ -1,9 +1,8 @@
 import 'dart:developer';
 
-import 'package:marvel/src/modules/movie_detail/infra/datasources/movie_detail_datasource.dart';
-import 'package:marvel/src/modules/movie_detail/models/movie.dart';
-
 import '../../domain/infra/movie_detail_repository.dart';
+import '../../models/movie.dart';
+import '../datasources/movie_detail_datasource.dart';
 
 class MovieDetailRepositoryImpl implements MovieDetailRepository {
   final MovieDetailDatasource _movieDetailDatasource;

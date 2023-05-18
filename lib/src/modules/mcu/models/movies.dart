@@ -69,9 +69,9 @@ class Movies {
   factory Movies.fromMap(Map<String, dynamic> map) {
     try {
       return Movies(
-        adult: map['adult'] ?? false,
+        adult: map['adult'],
         backdropPath: map['backdrop_path'],
-        genreIds: (map['genre_ids'] as List<int>),
+        genreIds: map['genre_ids'].cast<int>(),
         id: map['id'],
         originalLanguage: map['original_language'],
         originalTitle: map['original_title'],
@@ -80,7 +80,7 @@ class Movies {
         posterPath: map['poster_path'],
         releaseDate: map['release_date'],
         title: map['title'],
-        video: map['video'] ?? false,
+        video: map['video'],
         voteAverage: map['vote_average'],
         voteCount: map['vote_count'],
       );

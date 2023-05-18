@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:marvel/src/core/theme/app_theme.dart';
 
+import 'src/core/theme/app_theme.dart';
 import 'src/modules/mcu/mcu_provider.dart';
 import 'src/modules/movie_detail/movie_detail_provider.dart';
 

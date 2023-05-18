@@ -1,16 +1,18 @@
+import 'dart:convert';
 import 'dart:developer';
 
-import 'package:marvel/src/modules/movie_detail/infra/datasources/movie_detail_datasource.dart';
+import 'package:flutter/services.dart';
 
-import '../mock/mock_movie_detail.dart';
+import '../../infra/datasources/movie_detail_datasource.dart';
+
 
 class MovieDetailDatasourceImpl implements MovieDetailDatasource {
   @override
   Future<Map<String, dynamic>> getDetailMovie(int id) async {
     try {
-      await Future.delayed(const Duration(seconds: 2));
-      final list = movieDetail['mcu'] as List;
-      return Future.value(list.firstWhere((element) => element['id'] == id));
+      final mock = await rootBundle.loadString('assets/mock/mock.json');
+      final list = await json.decode(mock);
+      return Future.value(list['mcu'].firstWhere((element) => element['id'] == id));
     } on Exception catch (e, s) {
       log('Erro no MovieDetailDetasourceImpl', error: e, stackTrace: s);
       throw Exception('Erro no MovieDetailDetasourceImpl');

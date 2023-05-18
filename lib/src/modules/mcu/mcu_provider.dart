@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:marvel/src/core/mixins/loader.dart';
-import 'package:marvel/src/modules/mcu/presenter/controllers/bloc/mcu_bloc.dart';
-import 'package:marvel/src/modules/mcu/ui/mcu_page.dart';
+import '../../core/mixins/loader.dart';
+import 'presenter/controllers/bloc/mcu_bloc.dart';
+import 'ui/mcu_page.dart';
 import 'package:provider/provider.dart';
 
 import 'data/datasource/mcu_datasource_impl.dart';
@@ -24,10 +24,18 @@ class _McuProviderState extends State<McuProvider> with Loader {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        RepositoryProvider<McuDatasource>(create: (context) => McuDatasourceImpl(),),
-        RepositoryProvider<McuRepository>(create: (context) => McuRepositoryImpl(context.read<McuDatasource>()),),
-        RepositoryProvider<GetListMovies>(create: (context) => GetListMoviesImpl(context.read<McuRepository>()),),
-        BlocProvider(create: (context) => McuBloc(context.read<GetListMovies>()),),
+        RepositoryProvider<McuDatasource>(
+          create: (context) => McuDatasourceImpl(),
+        ),
+        RepositoryProvider<McuRepository>(
+          create: (context) => McuRepositoryImpl(context.read<McuDatasource>()),
+        ),
+        RepositoryProvider<GetListMovies>(
+          create: (context) => GetListMoviesImpl(context.read<McuRepository>()),
+        ),
+        BlocProvider(
+          create: (context) => McuBloc(context.read<GetListMovies>()),
+        ),
       ],
       child: const McuPage(),
     );

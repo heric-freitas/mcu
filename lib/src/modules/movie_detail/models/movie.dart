@@ -71,7 +71,7 @@ class Movie {
       return Movie(
         adult: map['adult'] ?? false,
         backdropPath: map['backdrop_path'],
-        genreIds: (map['genre_ids'] as List<int>),
+        genreIds: (map['genre_ids'].cast<int>()),
         id: map['id'],
         originalLanguage: map['original_language'],
         originalTitle: map['original_title'],

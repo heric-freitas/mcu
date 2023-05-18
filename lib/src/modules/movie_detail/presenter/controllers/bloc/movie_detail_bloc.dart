@@ -1,7 +1,8 @@
 import 'package:bloc/bloc.dart';
-import 'package:marvel/src/modules/movie_detail/models/movie.dart';
-import 'package:marvel/src/modules/movie_detail/presenter/usecases/get_movie_detail.dart';
 import 'package:meta/meta.dart';
+
+import '../../../models/movie.dart';
+import '../../usecases/get_movie_detail.dart';
 
 part 'movie_detail_event.dart';
 part 'movie_detail_state.dart';

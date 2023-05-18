@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:marvel/src/core/extensions/date_formatter.dart';
-import 'package:marvel/src/core/extensions/size.dart';
-import 'package:marvel/src/modules/movie_detail/models/movie.dart';
+import '../../../core/extensions/date_formatter.dart';
+import '../../../core/extensions/size.dart';
+import '../models/movie.dart';
 
 import '../../../core/mixins/loader.dart';
 import '../../../core/mixins/messages.dart';

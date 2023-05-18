@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:marvel/src/core/styles/app_text_styles.dart';
-import 'package:marvel/src/modules/mcu/models/movies.dart';
+import '../../../../core/styles/app_text_styles.dart';
+import '../../models/movies.dart';
 
 class CardMovie extends StatelessWidget {
   final Movies movie;

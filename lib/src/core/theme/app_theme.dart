@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:marvel/src/core/styles/app_color.dart';
-import 'package:marvel/src/core/styles/app_styles.dart';
 
+import '../styles/app_color.dart';
+import '../styles/app_styles.dart';
 import '../styles/app_text_styles.dart';
 
 class AppTheme {

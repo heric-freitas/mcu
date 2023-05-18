@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:marvel/src/core/styles/app_color.dart';
-import 'package:marvel/src/core/styles/app_text_styles.dart';
+
+import '../../../../core/styles/app_color.dart';
+import '../../../../core/styles/app_text_styles.dart';
 
 class RowInfo extends StatelessWidget {
   final String title;

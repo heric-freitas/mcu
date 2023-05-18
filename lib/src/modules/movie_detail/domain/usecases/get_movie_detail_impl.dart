@@ -1,5 +1,5 @@
-import 'package:marvel/src/modules/movie_detail/domain/infra/movie_detail_repository.dart';
-import 'package:marvel/src/modules/movie_detail/models/movie.dart';
+import '../infra/movie_detail_repository.dart';
+import '../../models/movie.dart';
 
 import '../../presenter/usecases/get_movie_detail.dart';
 

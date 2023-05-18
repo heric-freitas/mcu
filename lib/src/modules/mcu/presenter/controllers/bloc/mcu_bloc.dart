@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:marvel/src/modules/mcu/models/movies.dart';
-import 'package:marvel/src/modules/mcu/presenter/usecases/get_list_movies.dart';
+import '../../../models/movies.dart';
+import '../../usecases/get_list_movies.dart';
 import 'package:meta/meta.dart';
 
 part 'mcu_event.dart';
