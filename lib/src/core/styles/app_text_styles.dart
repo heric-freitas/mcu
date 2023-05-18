@@ -9,28 +9,24 @@ class AppTextStyles {
     return _instance!;
   }
 
-  TextStyle get textLight => const TextStyle(
-        fontWeight: FontWeight.w300,
-      );
-  TextStyle get textRegular => const TextStyle(
+  final marvel = 'Marvel';
+
+
+  TextStyle get textRegular => TextStyle(
         fontWeight: FontWeight.normal,
+        fontFamily: marvel,
       );
-  TextStyle get textMedium => const TextStyle(
-        fontWeight: FontWeight.w500,
-      );
-  TextStyle get textSemiBold => const TextStyle(
-        fontWeight: FontWeight.w600,
-      );
-  TextStyle get textBold => const TextStyle(
+
+
+  TextStyle get textBold => TextStyle(
         fontWeight: FontWeight.bold,
+        fontFamily: marvel,
       );
-  TextStyle get textExtraBold => const TextStyle(
-        fontWeight: FontWeight.w800,
-      );
+
 
   TextStyle get textButtonLabel => textBold.copyWith(fontSize: 14);
   TextStyle get text => textRegular.copyWith(fontSize: 18);
-  TextStyle get textTitle => textExtraBold.copyWith(fontSize: 22);
+  TextStyle get textTitle => textBold.copyWith(fontSize: 22);
 }
 
 extension AppTextStylesExtensions on BuildContext {

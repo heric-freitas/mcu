@@ -14,7 +14,7 @@ class RowInfo extends StatelessWidget {
       children: [
         Text(
           title,
-          style: context.appTextStyles.textTitle,
+          style: context.appTextStyles.textTitle.copyWith(color: Colors.white),
         ),
         const SizedBox(
            height: 5,
@@ -24,7 +24,7 @@ class RowInfo extends StatelessWidget {
           maxLines: 5,
           overflow: TextOverflow.ellipsis,
           textAlign: TextAlign.justify,
-          style: context.appTextStyles.text,
+          style: context.appTextStyles.text.copyWith(color: Colors.white),
         ),
         const SizedBox(
            height: 5,

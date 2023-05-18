@@ -50,8 +50,7 @@ class _McuPageState extends State<McuPage> with Loader, Messages {
       appBar: AppBar(
         title: const Text('Filmes'),
       ),
-      body: Container(
-        color: Colors.grey[50],
+      body: Padding(
         padding: const EdgeInsets.only(left: 16, top: 16, right: 16),
         child: BlocConsumer<McuBloc, McuState>(
           bloc: controller,

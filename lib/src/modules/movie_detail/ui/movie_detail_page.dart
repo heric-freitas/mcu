@@ -94,7 +94,7 @@ class __SuccessPageState extends State<_SuccessPage> {
               SizedBox(
                 width: context.screenWidth,
                 child: Image.asset(
-                  widget.movie.posterPath!,
+                  'assets/movies${widget.movie.posterPath!}',
                   errorBuilder: (context, error, stackTrace) {
                     return Image.asset('assets/movies/capitao2.jpg');
                   },

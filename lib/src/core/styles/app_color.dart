@@ -10,7 +10,7 @@ class AppColor {
    }
 
    Color get primary => const Color(0xFF007D21);
-   Color get secundary => const Color(0xFFFFAB18);
+   Color get secundary => const Color(0xFF700611);
    Color get black => const Color(0xFF140E0E);
 }
 
